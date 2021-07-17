@@ -14,10 +14,15 @@ const Baseboard = () => {
         <div>+55 11 3090 1039</div>
       </S.AddressContainer>
       <S.ContactsContainer>
-        <S.ContactButton>ENTRE EM CONTATO</S.ContactButton>
         <S.ContactButton>
-          FALE COM O NOSSO
-          <br /> CONSULTOR ONLINE
+          <img alt="" src={msgIcon} /> <div>ENTRE EM CONTATO</div>
+        </S.ContactButton>
+        <S.ContactButton>
+          <img alt="" src={phoneIcon} />
+          <div>
+            FALE COM O NOSSO
+            <br /> CONSULTOR ONLINE
+          </div>
         </S.ContactButton>
       </S.ContactsContainer>
       <S.LogosContainer>
