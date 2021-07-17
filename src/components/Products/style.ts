@@ -92,10 +92,17 @@ export const HoverContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  :hover {
-    background-color: #ccc;
+  @media (max-width: 768px) {
     & button {
       display: block;
+    }
+  }
+  @media (min-width: 769px) {
+    :hover {
+      background-color: #ccc;
+      & button {
+        display: block;
+      }
     }
   }
 `;

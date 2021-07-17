@@ -3,11 +3,14 @@ import styled from "styled-components";
 export const NewsContainer = styled.section`
   background-color: #f2f2f2;
   width: 100%;
-  height: 150px;
+  height: 146px;
   max-width: 1920px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media (max-width: 768px) {
+    height: 276px;
+  }
 `;
 export const Message = styled.h2`
   font-family: Lato;
@@ -38,6 +41,12 @@ export const Form = styled.form`
   display: flex;
   flex-direction: row;
   justify-content: center;
+  @media (max-width: 768px) {
+    height: 200px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
 `;
 
 export const NewsButton = styled.button`

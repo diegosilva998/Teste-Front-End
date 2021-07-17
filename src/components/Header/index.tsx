@@ -10,6 +10,8 @@ import { Menu, MenuItem, Button } from "@material-ui/core";
 
 import { useState } from "react";
 
+import { useProductsCart } from "provider/Cart";
+
 const StyledBadge = withStyles((theme: Theme) =>
   createStyles({
     badge: {
@@ -23,6 +25,7 @@ const StyledBadge = withStyles((theme: Theme) =>
 
 const Header = () => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
+  const { cartQtd } = useProductsCart();
 
   const handleOpen = (event: React.MouseEvent<HTMLButtonElement>) => {
     setAnchorEl(event.currentTarget);
@@ -44,7 +47,7 @@ const Header = () => {
           <S.UserIconImage alt="icone de usuario" src={userIcon} />
           <S.Account>Minha Conta</S.Account>
           <S.ButtonIcon>
-            <StyledBadge badgeContent={4} color="secondary">
+            <StyledBadge badgeContent={cartQtd} color="secondary">
               <S.CartIconImage
                 alt="icone de carrinho"
                 src={cartIcon}
@@ -76,7 +79,7 @@ const Header = () => {
           </Menu>
           <S.LogoImage alt="corebiz logo" src={logo} />
           <S.ButtonIcon>
-            <StyledBadge badgeContent={4} color="secondary">
+            <StyledBadge badgeContent={cartQtd} color="secondary">
               <S.CartIconImage
                 alt="icone de carrinho"
                 src={cartIcon}

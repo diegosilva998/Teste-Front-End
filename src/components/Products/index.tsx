@@ -4,6 +4,8 @@ import { useState } from "react";
 import { useEffect } from "react";
 import Slider from "react-slick";
 
+import { useProductsCart } from "provider/Cart";
+
 type productProps = {
   productId: number;
   productName: string;
@@ -20,6 +22,7 @@ type installmentsProps = {
 
 const MultipleItems = () => {
   const [products, setProducts] = useState([]);
+  const { addToCart } = useProductsCart();
 
   const get_products = async () => {
     try {
@@ -43,27 +46,32 @@ const MultipleItems = () => {
   };
 
   const settings = {
+    dots: false,
     infinite: false,
     speed: 500,
+    arrows: false,
     slidesToShow: 4,
     slidesToScroll: 4,
-    initialSlide: 0,
+    initialSlide: 2,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
-          infinite: true,
-          dots: true,
+          initialSlide: 2,
+          infinite: false,
+          dots: false,
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 768,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
           initialSlide: 2,
+          infinite: false,
+          dots: false,
         },
       },
       {
@@ -71,6 +79,9 @@ const MultipleItems = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          initialSlide: 2,
+          infinite: false,
+          dots: false,
         },
       },
     ],
@@ -110,7 +121,7 @@ const MultipleItems = () => {
                     ) : (
                       <S.ProductInstallments></S.ProductInstallments>
                     )}
-                    <S.ButtonBuy>COMPAR</S.ButtonBuy>
+                    <S.ButtonBuy onClick={addToCart}>COMPAR</S.ButtonBuy>
                   </S.HoverContainer>
                 </S.ProductsContainer>
               </S.Product>

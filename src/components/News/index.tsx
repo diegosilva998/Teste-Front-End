@@ -86,27 +86,3 @@ const NewsLetter = () => {
 };
 
 export default NewsLetter;
-
-{
-  /* </S.NewsContainer>
-      <S.Message>
-        Participe de nossas news com promoções e novidades !
-      </S.Message>
-      <form onSubmit={handleSubmit(onSubmit)}>
-        <input
-          type="text"
-          {...register("name")}
-          placeholder="Digite Seu Nome"
-        />
-        <span>{errors.name?.message}</span>
-        <input
-          type="email"
-          {...register("email")}
-          placeholder="Digite Seu Email"
-        />
-        <span>{errors.email?.message}</span>
-        <span></span>
-        <button type="submit">Eu quero</button>
-      </form>
-    </S.NewsContainer> */
-}
