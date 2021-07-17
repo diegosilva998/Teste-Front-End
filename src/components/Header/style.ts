@@ -13,6 +13,11 @@ export const LogoImage = styled.img`
   width: 170px;
   height: 41px;
   margin: 10px 50px;
+  @media (max-width: 768px) {
+    width: 109px;
+    height: 41px;
+    margin: 0;
+  }
 `;
 
 export const SeachBar = styled.input`
@@ -20,6 +25,9 @@ export const SeachBar = styled.input`
   outline: none;
   width: 80%;
   font-family: Nunito;
+  @media (max-width: 768px) {
+    width: 302%;
+  }
 `;
 
 export const SeachContainer = styled.div`
@@ -29,6 +37,12 @@ export const SeachContainer = styled.div`
   display: flex;
   justify-content: space-between;
   margin-right: 30px;
+  @media (max-width: 768px) {
+    height: 25px;
+    width: 80%;
+    margin: 0;
+    justify-content: space-space-around;
+  }
 `;
 
 export const SeachIconImage = styled.img`
@@ -41,6 +55,10 @@ export const MenuContainer = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  @media (max-width: 768px) {
+    width: 100%;
+    justify-content: space-around;
+  }
 `;
 
 export const Account = styled.div`
@@ -63,3 +81,24 @@ export const ButtonIcon = styled.button`
 `;
 
 export const CartIconImage = styled.img``;
+
+export const Mobile = styled.div`
+  width: 100%;
+  display: none;
+  @media (max-width: 768px) {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+`;
+
+export const Desktop = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 768px) {
+    display: none;
+  }
+`;

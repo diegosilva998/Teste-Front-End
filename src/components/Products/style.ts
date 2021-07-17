@@ -15,6 +15,9 @@ export const SliderContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-self: center;
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
 `;
 
 export const ProductsContainer = styled.div`
