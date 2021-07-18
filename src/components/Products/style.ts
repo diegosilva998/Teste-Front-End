@@ -74,7 +74,7 @@ export const ProductPrice = styled.div`
 export const Rating = styled.div``;
 
 export const ProductImage = styled.img`
-  width: 200px;
+  width: 100%;
   height: 200px;
 `;
 
@@ -89,7 +89,8 @@ export const ButtonBuy = styled.button`
   cursor: pointer;
 `;
 export const HoverContainer = styled.div`
-  padding: 5px;
+  padding: 5px 0;
+  width: 100%;
   background-color: #fff;
   display: flex;
   flex-direction: column;
