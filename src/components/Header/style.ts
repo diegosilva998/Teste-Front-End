@@ -66,6 +66,7 @@ export const Account = styled.div`
   font-weight: 400;
   font-size: 13px;
   margin-right: 15px;
+  cursor: pointer;
 `;
 
 export const UserIconImage = styled.img`
@@ -85,6 +86,7 @@ export const CartIconImage = styled.img``;
 export const Mobile = styled.div`
   width: 100%;
   display: none;
+  cursor: pointer;
   @media (max-width: 768px) {
     display: block;
     display: flex;

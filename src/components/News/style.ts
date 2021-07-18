@@ -56,6 +56,7 @@ export const NewsButton = styled.button`
   border-radius: 8px;
   background-color: #000;
   color: #fff;
+  cursor: pointer;
 `;
 export const NewEmailButton = styled.button`
   height: 48px;
@@ -64,4 +65,5 @@ export const NewEmailButton = styled.button`
   border-radius: 8px;
   background-color: #000;
   color: #fff;
+  cursor: pointer;
 `;

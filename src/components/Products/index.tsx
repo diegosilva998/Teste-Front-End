@@ -4,6 +4,8 @@ import { useState } from "react";
 import { useEffect } from "react";
 import Slider from "react-slick";
 
+import Rating from "@material-ui/lab/Rating";
+
 import { useProductsCart } from "provider/Cart";
 
 type productProps = {
@@ -52,7 +54,7 @@ const MultipleItems = () => {
     arrows: false,
     slidesToShow: 4,
     slidesToScroll: 4,
-    initialSlide: 2,
+    initialSlide: 3,
     responsive: [
       {
         breakpoint: 1024,
@@ -90,6 +92,7 @@ const MultipleItems = () => {
   return (
     <S.Main>
       <S.SliderContainer>
+        <h2> Mais Vendidos</h2>
         <Slider {...settings}>
           {products.map((product: productProps, index) => {
             return (
@@ -98,6 +101,7 @@ const MultipleItems = () => {
                   <S.ProductImage src={product.imageUrl} />
                   <S.HoverContainer>
                     <S.ProductName>{product.productName}</S.ProductName>
+                    <Rating name="read-only" value={product.stars} readOnly />
                     {product.listPrice ? (
                       <S.ProductListPrice>
                         de {numberToReal(product.listPrice)}

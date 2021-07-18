@@ -85,6 +85,7 @@ export const ButtonBuy = styled.button`
   width: 125px;
   height: 32px;
   display: none;
+  cursor: pointer;
 `;
 export const HoverContainer = styled.div`
   padding: 5px;

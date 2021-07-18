@@ -34,6 +34,8 @@ export const ContactButton = styled.button`
   background-color: #fff;
   color: #000;
 
+  cursor: pointer;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
