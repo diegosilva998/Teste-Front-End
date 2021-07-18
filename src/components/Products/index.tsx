@@ -9,6 +9,9 @@ import Rating from "@material-ui/lab/Rating";
 
 import { useProductsCart } from "provider/Cart";
 
+import prev from "assets/prev.svg";
+import next from "assets/next.svg";
+
 type productProps = {
   productId: number;
   productName: string;
@@ -54,14 +57,42 @@ const MultipleItems = () => {
     return arr;
   };
 
+  const NextArrow = (props) => {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, display: "block" }}
+        onClick={onClick}
+      >
+        <img alt="" src={next} />
+      </div>
+    );
+  };
+
+  const PrevArrow = (props) => {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, display: "block" }}
+        onClick={onClick}
+      >
+        <img alt="" src={prev} />
+      </div>
+    );
+  };
+
   const settings = {
     dots: false,
     infinite: false,
     speed: 500,
-    arrows: false,
+    arrows: true,
     slidesToShow: 4,
     slidesToScroll: 4,
     initialSlide: 3,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
     responsive: [
       {
         breakpoint: 1024,
@@ -114,12 +145,6 @@ const MultipleItems = () => {
                       readOnly
                       size="small"
                     />
-                    {/* <Rating
-                      name="read-only"
-                      value={product.stars}
-                      readOnly
-                      size="small"
-                    /> */}
                     {product.listPrice ? (
                       <S.ProductListPrice>
                         de {numberToReal(product.listPrice)}

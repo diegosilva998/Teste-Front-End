@@ -9,14 +9,14 @@ export const Main = styled.main`
   align-self: center;
 `;
 export const SliderContainer = styled.div`
-  width: 70%;
+  width: 90%;
   height: 501px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-self: center;
-  @media (max-width: 1024px) {
-    width: 100%;
+  @media (max-width: 425px) {
+    width: 80%;
   }
 `;
 
@@ -28,12 +28,13 @@ export const ProductsContainer = styled.div`
   height: 353px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  margin-left: 10%;
 `;
 
 export const Product = styled.div`
   width: 100%;
   height: 353px;
-  margin: 0 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
