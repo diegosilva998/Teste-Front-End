@@ -4,7 +4,6 @@ export const NewsContainer = styled.section`
   background-color: #f2f2f2;
   width: 100%;
   height: 146px;
-  max-width: 1920px;
   display: flex;
   flex-direction: column;
   align-items: center;
