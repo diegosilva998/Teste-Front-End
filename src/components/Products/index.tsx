@@ -3,6 +3,7 @@ import { API } from "services";
 import { useState } from "react";
 import { useEffect } from "react";
 import Slider from "react-slick";
+import { withStyles } from "@material-ui/core/styles";
 
 import Rating from "@material-ui/lab/Rating";
 
@@ -25,6 +26,12 @@ type installmentsProps = {
 const MultipleItems = () => {
   const [products, setProducts] = useState([]);
   const { addToCart } = useProductsCart();
+
+  const StyledRating = withStyles({
+    iconFilled: {
+      color: "#F8475F",
+    },
+  })(Rating);
 
   const get_products = async () => {
     try {
@@ -101,7 +108,18 @@ const MultipleItems = () => {
                   <S.ProductImage src={product.imageUrl} />
                   <S.HoverContainer>
                     <S.ProductName>{product.productName}</S.ProductName>
-                    <Rating name="read-only" value={product.stars} readOnly />
+                    <StyledRating
+                      name="read-only"
+                      value={product.stars}
+                      readOnly
+                      size="small"
+                    />
+                    {/* <Rating
+                      name="read-only"
+                      value={product.stars}
+                      readOnly
+                      size="small"
+                    /> */}
                     {product.listPrice ? (
                       <S.ProductListPrice>
                         de {numberToReal(product.listPrice)}
