@@ -39,7 +39,7 @@ This project was made using the follow technologies:
 
 ```bash
 # Clone Repository
-$ git clone git@github.com:diegosilva998/Teste-Front-End.git && cd corebiz
+$ git clone git@github.com:diegosilva998/Teste-Front-End.git && cd Teste-Front-End
 
 # Install Dependencies
 $ yarn
