@@ -1,25 +1,59 @@
-# Site
+<p align="center">In this project, 
+I challenged myself putting in practice very important concepts from React, like integration with API, versioning, componentization, organization, 
+form validation and so much more...
 
-https://teste-front-end-two.vercel.app/
+I am very proud to had the opportunity :)
 
-## Available Scripts
+</p>
 
-In the project directory, you can run:
+<div align="center">
+  <sub> Made with 💖 by
+    <a href="https://github.com/diegosilva998">Diego Silva
+  </sub>
+</div>
 
-### `yarn start`
+# 📌 Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [Technologies](#rocket-technologies)
+- [How to Run](#computer-how-to-run)
+- [Issues](#bug-issues)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `yarn build`
+<p align="center">You can also see the application over here in <a href="https://teste-front-end-two.vercel.app/" target="_blank">Vercel</a>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+</p>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# :rocket: Technologies
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This project was made using the follow technologies:
+
+- [React](https://reactjs.org/)
+- [Context-API](https://reactjs.org/docs/context.html)
+- [Styled-Components](https://styled-components.com/)
+- [Axios](https://github.com/axios/axios)
+- [Yup](https://www.npmjs.com/package/yup)
+- [React-Hook-Form](https://react-hook-form.com/)
+- [React-Slick](https://react-slick.neostack.com/)
+
+# :computer: How to run
+
+```bash
+# Clone Repository
+$ git clone git@github.com:diegosilva998/Teste-Front-End.git && cd Teste-Front-End
+
+# Install Dependencies
+$ yarn
+
+# Fill .env.local file with YOUR environment variables, according to .env.example file.
+
+# Run Aplication
+$ yarn start
+```
+
+Go to http://localhost:3000/ to see the application running.
+
+# :bug: Issues
+
+Create a <a href="https://github.com/diegosilva998/Teste-Front-End/issues">new issue report</a>, it will be an honor to be able to help you solve and further improve our application.
+
+Made with 💖 by [Diego Silva](https://www.linkedin.com/in/diego-silva-dev/).
