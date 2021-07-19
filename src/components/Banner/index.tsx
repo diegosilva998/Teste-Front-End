@@ -7,7 +7,13 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const Banner = () => {
   return (
-    <Carousel transitionTime={1500} autoPlay infiniteLoop showStatus={false}>
+    <Carousel
+      transitionTime={1500}
+      autoPlay
+      infiniteLoop
+      showStatus={false}
+      showThumbs={false}
+    >
       <S.Element>
         <S.ImageDesktop>
           <img alt="banner" src={banner} />
