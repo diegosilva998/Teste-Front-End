@@ -90,7 +90,7 @@ const MultipleItems = () => {
     arrows: true,
     slidesToShow: 4,
     slidesToScroll: 4,
-    initialSlide: 3,
+    initialSlide: 0,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
     responsive: [

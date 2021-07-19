@@ -3,7 +3,7 @@ import LogosFooter from "assets/logosFooter.svg";
 import phoneIcon from "assets/phoneIcon.svg";
 import msgIcon from "assets/msgIcon.svg";
 
-const Baseboard = () => {
+const Footer = () => {
   return (
     <S.Footer>
       <S.AddressContainer style={{ color: "white" }}>
@@ -32,4 +32,4 @@ const Baseboard = () => {
   );
 };
 
-export default Baseboard;
+export default Footer;
